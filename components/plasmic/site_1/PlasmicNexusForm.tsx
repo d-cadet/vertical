@@ -416,7 +416,7 @@ function PlasmicNexusForm__RenderFunc(props: {
                                 className={classNames(
                                   projectcss.all,
                                   projectcss.__wab_text,
-                                  sty.text__b0QYm
+                                  sty.text__r4XoC
                                 )}
                               >
                                 <React.Fragment>
