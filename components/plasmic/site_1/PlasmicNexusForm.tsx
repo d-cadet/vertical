@@ -92,7 +92,6 @@ export type PlasmicNexusForm__OverridesType = {
   dd?: Flex__<"dd">;
   form?: Flex__<typeof FormWrapper>;
   button?: Flex__<typeof AntdButton>;
-  text?: Flex__<"div">;
   steps?: Flex__<typeof AntdSteps>;
 };
 
@@ -188,9 +187,24 @@ function PlasmicNexusForm__RenderFunc(props: {
         "Content-Type": "application/json",
         Accept: "application/json"
       }}
-      loadingDisplay={<DataCtxReader__>{$ctx => "Loading..."}</DataCtxReader__>}
+      loadingDisplay={
+        <DataCtxReader__>
+          {$ctx => (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___9NFY
+              )}
+            >
+              {"Loading..."}
+            </div>
+          )}
+        </DataCtxReader__>
+      }
       method={"POST"}
       noLayout={false}
+      previewSpinner={false}
       query={{
         query:
           "query Query($filters: FormFilters) {\n  form(filters: $filters) {\n    steps\n    title\n    description\n    requestType\n    reference\n  }\n}\n",
@@ -402,7 +416,7 @@ function PlasmicNexusForm__RenderFunc(props: {
                                 className={classNames(
                                   projectcss.all,
                                   projectcss.__wab_text,
-                                  sty.text
+                                  sty.text__b0QYm
                                 )}
                               >
                                 <React.Fragment>
@@ -466,6 +480,9 @@ function PlasmicNexusForm__RenderFunc(props: {
                 }
               })()}
               onChange={generateStateOnChangeProp($state, ["steps", "current"])}
+              progressDot={false}
+              responsive={false}
+              type={"default"}
             />
           </React.Fragment>
         )}
@@ -475,24 +492,13 @@ function PlasmicNexusForm__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "freeBox",
-    "section",
-    "h3",
-    "dd",
-    "form",
-    "button",
-    "text",
-    "steps"
-  ],
-  freeBox: ["freeBox", "section", "h3", "dd", "form", "button", "text"],
-  section: ["section", "h3", "dd", "form", "button", "text"],
+  root: ["root", "freeBox", "section", "h3", "dd", "form", "button", "steps"],
+  freeBox: ["freeBox", "section", "h3", "dd", "form", "button"],
+  section: ["section", "h3", "dd", "form", "button"],
   h3: ["h3"],
   dd: ["dd"],
-  form: ["form", "button", "text"],
-  button: ["button", "text"],
-  text: ["text"],
+  form: ["form", "button"],
+  button: ["button"],
   steps: ["steps"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -506,7 +512,6 @@ type NodeDefaultElementType = {
   dd: "dd";
   form: typeof FormWrapper;
   button: typeof AntdButton;
-  text: "div";
   steps: typeof AntdSteps;
 };
 
@@ -576,7 +581,6 @@ export const PlasmicNexusForm = Object.assign(
     dd: makeNodeComponent("dd"),
     form: makeNodeComponent("form"),
     button: makeNodeComponent("button"),
-    text: makeNodeComponent("text"),
     steps: makeNodeComponent("steps"),
 
     // Metadata about props expected for PlasmicNexusForm

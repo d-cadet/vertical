@@ -2,19 +2,19 @@
   "projects": [
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
-      "version": "6.24.0",
+      "version": "6.25.0",
       "dependencies": {},
       "lang": "ts",
       "fileLocks": [
         {
           "assetId": "ohDidvG9XsCeFumugENU3J",
-          "type": "projectCss",
-          "checksum": "fd83b730367fdbde2c69bc6cf31c2a3c"
+          "checksum": "de0a0e65174a6a185a8f822af51c6bdd",
+          "type": "globalContexts"
         },
         {
           "assetId": "ohDidvG9XsCeFumugENU3J",
-          "checksum": "de0a0e65174a6a185a8f822af51c6bdd",
-          "type": "globalContexts"
+          "type": "projectCss",
+          "checksum": "fd83b730367fdbde2c69bc6cf31c2a3c"
         }
       ],
       "codegenVersion": "0.0.1"
@@ -58,7 +58,7 @@
       "dependencies": {
         "YUiM7yqBWAqsh8KSnrdj7": "0.29.0",
         "8PtdGodUbexNYgkuyBUcWu": "3.24.0",
-        "ohDidvG9XsCeFumugENU3J": "6.24.0"
+        "ohDidvG9XsCeFumugENU3J": "6.25.0"
       },
       "lang": "ts",
       "fileLocks": [
@@ -69,23 +69,18 @@
         },
         {
           "assetId": "ccEeFTqGM7N6MKNn3Axffo",
-          "type": "projectCss",
-          "checksum": "eef506d92d03bc97902a191c3e36a923"
-        },
-        {
-          "assetId": "ccEeFTqGM7N6MKNn3Axffo",
           "checksum": "dcb000973d444ad20a32256ee35b8992",
           "type": "globalContexts"
         },
         {
           "type": "renderModule",
           "assetId": "wdxB0wvwiQ0G",
-          "checksum": "19370d5d8d6155e203a9f645633062bf"
+          "checksum": "e72ccf60fb0281cb0d18e4fc46ea12a2"
         },
         {
           "type": "cssRules",
           "assetId": "wdxB0wvwiQ0G",
-          "checksum": "19370d5d8d6155e203a9f645633062bf"
+          "checksum": "e72ccf60fb0281cb0d18e4fc46ea12a2"
         },
         {
           "type": "renderModule",
@@ -120,12 +115,17 @@
         {
           "type": "renderModule",
           "assetId": "CukkPgCkjNZW",
-          "checksum": "36bb63db87e4a20645bee92331ef7025"
+          "checksum": "15baeeda2c661ce3aa60d09fb6e2b4d6"
         },
         {
           "type": "cssRules",
           "assetId": "CukkPgCkjNZW",
-          "checksum": "36bb63db87e4a20645bee92331ef7025"
+          "checksum": "15baeeda2c661ce3aa60d09fb6e2b4d6"
+        },
+        {
+          "assetId": "ccEeFTqGM7N6MKNn3Axffo",
+          "type": "projectCss",
+          "checksum": "2c58200e8c838b1583d1702e9bcdef34"
         }
       ],
       "codegenVersion": "0.0.1"

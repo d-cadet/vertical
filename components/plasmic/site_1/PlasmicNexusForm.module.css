@@ -66,7 +66,7 @@
   max-width: 100%;
   object-fit: cover;
 }
-.text {
+.text__b0QYm {
   position: relative;
   width: 100%;
   height: auto;
@@ -77,4 +77,6 @@
   max-width: 100%;
   object-fit: cover;
   position: relative;
+  padding: 0px;
+  margin: 0px;
 }
